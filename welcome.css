@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+/*logo and navbar*/
+#main-header{
+    
+    display: flex;
+    color: white;
+    background-color:coral;
+    font-size: 30px;    
+    justify-content:center;
+    padding: 20px 20px 0px 20px;
+   
+}
+
+#logo{
+font-weight: bold;
+}
+#not-mobile-design{
+    display: none;
+}
+#top-navbar .container{
+    display:flex;
+    font-size: 25px;
+   
+    justify-content: center;
+    
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+.hamburger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .hamburger > p{
+      display: none;
+  }
+
+.hamburger::after {
+    display: none;
+}
+.container .dropdown #dropdownMenuLink{
+    background-color:coral;
+    border: none;
+    font-size: 25px;
+    padding: 0;
+}
+.container .dropdown .dropdown-item{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.container div a{
+    text-decoration: none;
+    padding: 20px;    
+} 
+.container div a:visited{
+   color:white;
+}
+footer{
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* carousel images*/
+
+.welcome-heading{
+    margin: 0;
+    font-size:70px;
+    color: white;
+    background-color:black;
+    opacity: 0.7;
+    padding: 30px;
+    font-weight: bold;
+    border-left:solid 5px coral;
+    border-right: solid 5px coral;
+}
+.caption-style{
+    padding: 20px;
+    font-size: 25px;
+    background-color: coral;
+    color: black;
+    font-weight: bold;
+    display:inline;
+}
+.carousel-center{
+    bottom: 200px;
+}
+#nacka-logo{
+    border-radius: 50%;
+    height: 150px;
+}
+/* #learnpoint-logo{
+    width: 150px;
+    height: 150Px;
+    color: black;
+    background-color: blue;
+    border-radius: 50%;
+} */
+.bottom-links{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(min-width:480px){
+    #main-header{
+            
+    justify-content:space-between;
+   
+    }
+    .container{
+        display: flex;
+        align-items: flex-start;
+    }
+    #not-mobile-design{
+        display: block;
+        
+    }
+    #item-hide-not-mobile{
+        display: none;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+    .hamburger > p{
+        display: inline-block;
+    }
+    .hamburger > div {
+       display: none;
+      }
+
+    
+}
+ @media(min-width:768px){
+    
+    
+} 
