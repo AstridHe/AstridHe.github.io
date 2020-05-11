@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+/*logo and navbar*/
+#main-header{
+    
+    display: flex;
+    color:black;
+    background-color:coral;
+    font-size: 30px;    
+    justify-content:center;
+    padding: 20px 20px 10px 20px;
+   
+}
+
+#logo{
+
+font-size: 30px;
+    font-family: 'Modak', cursive;
+    cursor: pointer;
+}
+.not-mobile-design{
+    display: none;
+}
+#top-navbar .container{
+    display:flex;
+    font-size: 25px;
+   
+    justify-content: center;
+    
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+.hamburger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  /* .hamburger > p{
+      display: none;
+  } */
+
+.hamburger::after {
+    display: none;
+}
+.container .dropdown #dropdownMenuLink{
+    background-color:coral;
+    border: none;
+    font-size: 25px;
+    padding: 0;
+}
+.container .dropdown .dropdown-item{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container div a{
+     text-decoration: none;
+     padding: 20px;    
+} 
+.container div a:visited{
+    color:black;
+}
+.container div a:hover{
+    font-weight: bolder;
+    color: black;
+}
+#left-nav ul li a:visited{
+    color:white;
+}
+#left-nav ul li a{
+    color:white;
+}
+
+.dropDown{
+    font-size: 20px;
+}
+
+/* website heading*/
+h1#website-heading{
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+main{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+#left-nav ul{
+   padding: 0;
+   
+   display: flex;
+   flex-direction:column;
+   
+   width: 100%;
+   align-items:stretch;
+}
+#left-nav ul li{
+    border-bottom: 4px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: lightslategray;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+#left-nav ul li a{
+    text-decoration: none;
+}
+
+#sub-main{
+    display: flex;
+    flex-direction: column;
+}
+.content h3{
+    display: flex;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    background-color: lightslategray;
+}
+.content p, .content ul{
+    padding:10px;
+}
+#content-layout-list{
+    padding-top:0;
+}
+#sub-main a, #reference a, #reference li{
+    text-align: center;
+}
+#reference ul li a:visited{
+    color:black;
+}
+#toTop{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+#toTop a{
+    color:white;
+}
+
+footer{
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* for tablets*/
+
+@media(min-width:480px){
+
+    #logo{
+
+        font-size: 30px;
+            font-family: 'Modak', cursive;
+            padding: 0;
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+    #sidor{
+        display: flex;
+    }
+    .dropdown{
+        display: none;
+    }
+    #main-header{
+     padding: 0;       
+    justify-content:space-between;
+   
+    }
+    .container{
+        display: flex;
+        align-items: flex-start;
+    }
+    .not-mobile-design{
+        display: flex;
+        justify-content: flex-end;
+      
+        
+    }
+    #item-hide-not-mobile{
+        display: none;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+    .hamburger > p{
+        display: inline-block;
+    }
+    .hamburger > div {
+       display: none;
+      }
+
+    main{
+        flex-direction: column;
+        
+        /* text-align: left; */
+    }
+    #left-nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        
+        width: 100%; 
+    }
+    #left-nav ul li{
+        align-content: center;
+    }
+}
+/*for desktops */
+ @media(min-width:770px){
+    .not-mobile-design{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .dropdown{
+        display: none;
+    } 
+    main{
+        flex-direction: row;
+        /* text-align: left; */
+    }
+    #left-nav ul{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 200px; 
+    }
+    #sub-main a, #reference a, #reference li{
+        text-align: left;}
+    
+     
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
